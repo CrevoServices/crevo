@@ -87,7 +87,7 @@ export function Hero() {
                 <Button
                   onClick={() => scrollToSection('portfolio')}
                   variant="outline"
-                  className="border-2 border-gray-700 bg-transparent hover:bg-gray-900 hover:border-gray-600 text-white px-8 py-6 transition-all duration-300"
+                  className="border-2 border-gray-700 bg-transparent hover:bg-gray-900 hover:border-gray-600 text-white px-8 py-6 transition-all duration-300 -mt-2"
                 >
                   View Our Work
                 </Button>
