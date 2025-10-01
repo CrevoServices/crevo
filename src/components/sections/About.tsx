@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Sparkles, Target, Rocket, CheckCircle, Cpu, Users, Globe } from "lucide-react";
+import { Sparkles, Target, Rocket, CircleCheck as CheckCircle, Cpu, Users, Globe } from "lucide-react";
 
 export function About() {
   return (
