@@ -18,8 +18,7 @@ export function Hero() {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <img 
-              src="/nobg crevo.png" 
-              
+              src="/nobg crevo.png"  
               alt="Crevo Logo" 
               className="h-12 md:h-10 lg:h-24 w-auto"
             />
