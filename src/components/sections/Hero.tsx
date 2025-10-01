@@ -22,7 +22,7 @@ export function Hero() {
               alt="Crevo Logo" 
               className="h-12 md:h-10 lg:h-24 w-auto"
             />
-            <div className="text-4xl font-bold">Crevo.</div>
+            <div className="text-4xl font-bold">Crev.</div>
           </div>
           
           {/* Navigation Menu */}
