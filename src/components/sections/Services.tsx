@@ -1,21 +1,19 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Bot, Palette, MessageSquare, Calendar, Phone, CreditCard, Brush, Package } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Database, Headphones, Calendar, Mail, Share2, Globe, ShoppingCart, Package } from "lucide-react";
 
 export function Services() {
   const automationServices = [
-    { icon: Bot, title: "CRM Integration", description: "Seamlessly connect your customer data" },
-    { icon: MessageSquare, title: "Chatbots", description: "24/7 intelligent customer support" },
-    { icon: CreditCard, title: "Lead Capture", description: "Automated lead generation systems" },
-    { icon: Calendar, title: "Appointment Scheduling", description: "Smart booking and calendar management" },
-    { icon: Phone, title: "Automated Callers", description: "AI-powered voice interactions" },
+    { icon: Database, title: "Lead Capture & CRM Integration" },
+    { icon: Headphones, title: "Customer Support Ticket Management" },
+    { icon: Calendar, title: "Appointment Setting" },
+    { icon: Mail, title: "AI Outreach – Personalized Emails" },
+    { icon: Share2, title: "AI Outreach – Social Media" },
   ];
 
   const creativeServices = [
-    { icon: Palette, title: "Logo Design", description: "Memorable brand identities" },
-    { icon: Brush, title: "Brochures", description: "Professional marketing materials" },
-    { icon: Package, title: "Packaging", description: "Product packaging that sells" },
-    { icon: Bot, title: "Branding", description: "Complete brand strategy and design" },
-    { icon: MessageSquare, title: "Website UI/UX", description: "User-centered digital experiences" },
+    { icon: Globe, title: "Website UI/UX" },
+    { icon: ShoppingCart, title: "E-commerce Store Design & Setup" },
+    { icon: Package, title: "Product & Packaging Design" },
   ];
 
   return (
@@ -38,15 +36,17 @@ export function Services() {
             </h3>
             <div className="space-y-4">
               {automationServices.map((service, index) => (
-                <Card key={index} className="bg-gray-900 border-gray-800 hover:border-blue-500/50 transition-all duration-300">
+                <Card
+                  key={index}
+                  className="bg-gray-900 border-gray-800 hover:border-blue-500/50 hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300 group"
+                >
                   <CardContent className="p-6">
                     <div className="flex items-center space-x-4">
-                      <div className="p-2 rounded-lg bg-blue-500/20">
-                        <service.icon className="w-6 h-6 text-blue-400" />
+                      <div className="p-3 rounded-lg bg-blue-500/20 group-hover:bg-blue-500/30 transition-all duration-300">
+                        <service.icon className="w-6 h-6 text-blue-400 group-hover:scale-110 transition-transform duration-300" />
                       </div>
                       <div>
-                        <h4 className="font-semibold text-white">{service.title}</h4>
-                        <p className="text-gray-400 text-sm">{service.description}</p>
+                        <h4 className="font-semibold text-white text-base">{service.title}</h4>
                       </div>
                     </div>
                   </CardContent>
@@ -64,15 +64,17 @@ export function Services() {
             </h3>
             <div className="space-y-4">
               {creativeServices.map((service, index) => (
-                <Card key={index} className="bg-gray-900 border-gray-800 hover:border-purple-500/50 transition-all duration-300">
+                <Card
+                  key={index}
+                  className="bg-gray-900 border-gray-800 hover:border-purple-500/50 hover:-translate-y-1 hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300 group"
+                >
                   <CardContent className="p-6">
                     <div className="flex items-center space-x-4">
-                      <div className="p-2 rounded-lg bg-purple-500/20">
-                        <service.icon className="w-6 h-6 text-purple-400" />
+                      <div className="p-3 rounded-lg bg-purple-500/20 group-hover:bg-purple-500/30 transition-all duration-300">
+                        <service.icon className="w-6 h-6 text-purple-400 group-hover:scale-110 transition-transform duration-300" />
                       </div>
                       <div>
-                        <h4 className="font-semibold text-white">{service.title}</h4>
-                        <p className="text-gray-400 text-sm">{service.description}</p>
+                        <h4 className="font-semibold text-white text-base">{service.title}</h4>
                       </div>
                     </div>
                   </CardContent>
