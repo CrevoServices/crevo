@@ -68,7 +68,7 @@ export function Hero() {
                 </span>
               </h1>
               <p className="text-lg md:text-xl text-gray-300 max-w-xl">
-                We help businesses grow with AI automation and stunning creative design.
+                Turning ideas into intelligent experiences — where design inspires and automation delivers.
               </p>
               <Button 
                 className="bg-transparent border-2 border-transparent bg-gradient-to-r from-blue-500 to-purple-600 p-[2px] rounded-lg hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300"
