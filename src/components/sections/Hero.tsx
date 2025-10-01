@@ -73,7 +73,7 @@ export function Hero() {
                 </span>
               </h1>
               <p className="text-lg md:text-xl text-gray-300 max-w-xl">
-                Smart automation meets bold design — to simplify, scale, and stand out.
+                Turning ideas into intelligent experiences — where design inspires and automation delivers.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
