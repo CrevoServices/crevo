@@ -11,7 +11,7 @@ import { createClient } from "@supabase/supabase-js";
 
 // ✅ 2. Initialize Supabase client (replace with your real values)
 const supabaseUrl = "https://ikeorrpduvmjlocjwzep.supabase.co"; // e.g. https://abcd.supabase.co
-const supabaseAnonKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlrZW9ycnBkdXZtamxvY2p3emVwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTkzNDUxMDgsImV4cCI6MjA3NDkyMTEwOH0.E4QwTO3eg5AvRD5j02b8cIqUFpectn_4IEJr5CFX7Ws"; // from Supabase → Settings → API
+const supabaseAnonKey = "sb_publishable_LrPmdEWeuD4txahm8VDJvw_8UBBmkBl"; // from Supabase → Settings → API
 const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 export function Contact() {
