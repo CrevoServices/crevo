@@ -6,6 +6,14 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Mail, Phone, MapPin, Linkedin, Instagram } from "lucide-react";
 import { useState } from "react";
 
+// ✅ 1. Import Supabase client
+import { createClient } from "@supabase/supabase-js";
+
+// ✅ 2. Initialize Supabase client (replace with your real values)
+const supabaseUrl = "https://ikeorrpduvmjlocjwzep.supabase.co"; // e.g. https://abcd.supabase.co
+const supabaseAnonKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlrZW9ycnBkdXZtamxvY2p3emVwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTkzNDUxMDgsImV4cCI6MjA3NDkyMTEwOH0.E4QwTO3eg5AvRD5j02b8cIqUFpectn_4IEJr5CFX7Ws"; // from Supabase → Settings → API
+const supabase = createClient(supabaseUrl, supabaseAnonKey);
+
 export function Contact() {
   const [formData, setFormData] = useState({
     fullName: "",
@@ -61,15 +69,29 @@ export function Contact() {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  // ✅ 3. Modified handleSubmit to push data to Supabase
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     if (validateForm()) {
       setIsSubmitting(true);
-      console.log("Form submitted:", formData);
 
-      setTimeout(() => {
-        setIsSubmitting(false);
+      // Insert into Supabase
+      const { error } = await supabase.from("form_submissions").insert([
+        {
+          full_name: formData.fullName,
+          email: formData.email,
+          company_name: formData.companyName,
+          service_selected: formData.service,
+          project_info: formData.projectInfo,
+          additional_info: formData.additionalInfo,
+        },
+      ]);
+
+      if (error) {
+        console.error("Supabase insert error:", error);
+        alert("There was an error submitting the form. Please try again.");
+      } else {
         alert("Thank you for your message! We'll get back to you within 24 hours.");
         setFormData({
           fullName: "",
@@ -80,14 +102,16 @@ export function Contact() {
           additionalInfo: "",
         });
         setErrors({});
-      }, 1000);
+      }
+
+      setIsSubmitting(false);
     }
   };
 
   const handleInputChange = (field: string, value: string) => {
-    setFormData(prev => ({ ...prev, [field]: value }));
+    setFormData((prev) => ({ ...prev, [field]: value }));
     if (errors[field]) {
-      setErrors(prev => ({ ...prev, [field]: "" }));
+      setErrors((prev) => ({ ...prev, [field]: "" }));
     }
   };
 
