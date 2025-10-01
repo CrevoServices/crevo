@@ -13,6 +13,11 @@ export function Hero() {
 
   return (
     <div className="min-h-screen bg-black text-white flex flex-col relative w-full overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/20 rounded-full blur-[120px] animate-float-slow" />
+        <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-purple-500/20 rounded-full blur-[100px] animate-float-delayed" />
+        <div className="absolute top-1/2 right-1/3 w-64 h-64 bg-cyan-500/15 rounded-full blur-[90px] animate-float-fast" />
+      </div>
       {/* Navigation */}
       <nav className="p-6 md:p-8 relative z-10">
         <div className="flex items-center justify-between">
@@ -61,22 +66,32 @@ export function Hero() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             {/* Left Content */}
             <div className="space-y-6">
-              <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 Creativity Meets 
                 <span className="block bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
                   Automation
                 </span>
               </h1>
               <p className="text-lg md:text-xl text-gray-300 max-w-xl">
-                Turning ideas into intelligent experiences — where design inspires and automation delivers.
+                Smart automation meets bold design — to simplify, scale, and stand out.
               </p>
-              <Button 
-                className="bg-transparent border-2 border-transparent bg-gradient-to-r from-blue-500 to-purple-600 p-[2px] rounded-lg hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300"
-              >
-                <span className="bg-black px-8 py-3 rounded-md text-white hover:bg-gray-900 transition-colors">
-                  Get in Touch
-                </span>
-              </Button>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button
+                  onClick={() => scrollToSection('contact')}
+                  className="bg-transparent border-2 border-transparent bg-gradient-to-r from-blue-500 to-purple-600 p-[2px] rounded-lg hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300"
+                >
+                  <span className="bg-black px-8 py-3 rounded-md text-white hover:bg-gray-900 transition-colors">
+                    Get in Touch
+                  </span>
+                </Button>
+                <Button
+                  onClick={() => scrollToSection('portfolio')}
+                  variant="outline"
+                  className="border-2 border-gray-700 bg-transparent hover:bg-gray-900 hover:border-gray-600 text-white px-8 py-6 transition-all duration-300"
+                >
+                  View Our Work
+                </Button>
+              </div>
             </div>
 
             {/* Right Visual Element - Spline Scene */}
