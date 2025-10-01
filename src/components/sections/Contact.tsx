@@ -40,7 +40,7 @@ export function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-white">Phone</h3>
-                    <p className="text-gray-400">+1 (555) 123-4567</p>
+                    <p className="text-gray-400">+91 98765 43210</p>
                   </div>
                 </div>
               </CardContent>
@@ -54,7 +54,7 @@ export function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-white">Location</h3>
-                    <p className="text-gray-400">San Francisco, CA</p>
+                    <p className="text-gray-400">Bengaluru, India</p>
                   </div>
                 </div>
               </CardContent>
@@ -105,6 +105,10 @@ export function Contact() {
                     Send Message
                   </span>
                 </Button>
+
+                <p className="text-sm text-gray-400 italic text-center mt-4">
+                  *We'll get back within 24 hours.
+                </p>
               </CardContent>
             </Card>
           </div>
