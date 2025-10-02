@@ -173,6 +173,7 @@ export function Contact() {
                 </div>
               </CardContent>
             </Card>
+          </div>
 
           {/* Contact Form */}
           <div className="lg:col-span-2">
@@ -321,6 +322,7 @@ export function Contact() {
             </Card>
           </div>
         </div>
+      </div>
     </section>
   );
 }
