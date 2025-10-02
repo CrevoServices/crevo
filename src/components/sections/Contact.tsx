@@ -321,7 +321,6 @@ export function Contact() {
             </Card>
           </div>
         </div>
-      </div>
     </section>
   );
 }
