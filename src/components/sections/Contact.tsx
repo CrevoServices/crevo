@@ -174,28 +174,6 @@ export function Contact() {
               </CardContent>
             </Card>
 
-            <div className="flex items-center justify-center gap-4 mt-6">
-              <a
-                href="https://linkedin.com/company/crevo-agency"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 rounded-lg bg-gray-900 border border-gray-800 hover:border-blue-500/50 hover:bg-gray-800 transition-all duration-300 group"
-                aria-label="Visit our LinkedIn page"
-              >
-                <Linkedin className="w-6 h-6 text-gray-400 group-hover:text-blue-400 transition-colors" />
-              </a>
-              <a
-                href="https://instagram.com/crevo.agency"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 rounded-lg bg-gray-900 border border-gray-800 hover:border-pink-500/50 hover:bg-gray-800 transition-all duration-300 group"
-                aria-label="Visit our Instagram page"
-              >
-                <Instagram className="w-6 h-6 text-gray-400 group-hover:text-pink-400 transition-colors" />
-              </a>
-            </div>
-          </div>
-
           {/* Contact Form */}
           <div className="lg:col-span-2">
             <Card className="bg-gray-900 border-gray-800">
