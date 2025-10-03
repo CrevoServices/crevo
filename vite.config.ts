@@ -6,14 +6,14 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url)),  // safer for Netlify
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
-  base: '/',                  // ensures assets load correctly on custom domain
+  base: '/crevo/',           // <<< IMPORTANT for GitHub Pages project site
   build: {
-    outDir: 'dist',           // Netlify expects "dist"
+    outDir: 'dist',
   },
   optimizeDeps: {
-    exclude: ['lucide-react'], // keep this as you had it
+    exclude: ['lucide-react'],
   },
 })
