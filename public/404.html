@@ -5,7 +5,7 @@
     <title>Redirecting…</title>
     <meta name="robots" content="noindex" />
     <script>
-      // Redirect any unknown path to the SPA entry with the original path in query (harmless if unused)
+      // Redirect any unknown path back into your SPA
       var l = window.location;
       l.replace(l.origin + "/?" + l.pathname.slice(1) + l.search + l.hash);
     </script>
