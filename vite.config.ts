@@ -5,15 +5,9 @@ import { fileURLToPath, URL } from 'node:url'
 export default defineConfig({
   plugins: [react()],
   resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url)),
-    },
+    alias: { '@': fileURLToPath(new URL('./src', import.meta.url)) },
   },
-  base: '/crevo/',           // <<< IMPORTANT for GitHub Pages project site
-  build: {
-    outDir: 'dist',
-  },
-  optimizeDeps: {
-    exclude: ['lucide-react'],
-  },
+  base: '/',        // << change from '/crevo/' to '/'
+  build: { outDir: 'dist' },
+  optimizeDeps: { exclude: ['lucide-react'] },
 })
