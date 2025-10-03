@@ -83,6 +83,7 @@ export function Hero() {
                   <span className="bg-black px-8 py-3 rounded-md text-white hover:bg-gray-900 transition-colors"> Get in Touch </span>
 
                 </Button>
+                
 
                 <Button
                   onClick={() => scrollToSection('portfolio')}
