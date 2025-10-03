@@ -78,13 +78,16 @@ export function Hero() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
   onClick={() => scrollToSection('contact')}
-  className="inline-flex w-auto bg-gradient-to-r from-blue-500 to-purple-600 
-             p-[2px] rounded-lg hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 mx-auto"
+  className="inline-flex bg-gradient-to-r from-blue-500 to-purple-600 p-[2px] rounded-lg 
+             hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 mx-auto
+             min-w-[200px] sm:min-w-[220px]"
 >
-  <span className="bg-black px-8 py-3 rounded-md text-white hover:bg-gray-900 transition-colors">
+  <span className="bg-black w-full text-center px-8 py-3 rounded-md text-white hover:bg-gray-900 transition-colors">
     Get in Touch
   </span>
 </Button>
+
+
 
 
 
