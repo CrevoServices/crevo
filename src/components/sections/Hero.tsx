@@ -80,11 +80,7 @@ export function Hero() {
                   onClick={() => scrollToSection('contact')}
                   className="bg-transparent border-2 border-transparent bg-gradient-to-r from-blue-500 to-purple-600 p-[2px] rounded-lg hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300"
                 >
-                  <div className="inline-flex rounded-md p-[2px] bg-gradient-to-r from-blue-500 to-purple-500 mx-auto">
-  <span className="bg-black px-8 py-3 rounded-md text-white hover:bg-gray-900 transition-colors">
-    Get in Touch
-  </span>
-</div>
+                  <span className="bg-black px-8 py-3 rounded-md text-white hover:bg-gray-900 transition-colors"> Get in Touch </span>
 
                 </Button>
                 <Button
