@@ -11,7 +11,7 @@ export function Services() {
   ];
 
   const creativeServices = [
-    { icon: Globe, title: "Website UI/UX" description:"hii"},
+    { icon: Globe, title: "Website UI/UX"},
     { icon: ShoppingCart, title: "E-commerce Store Design & Setup" },
     { icon: Package, title: "Product & Packaging Design" },
   ];
