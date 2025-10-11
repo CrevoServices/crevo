@@ -61,8 +61,6 @@ export function Contact() {
 
     if (!formData.projectInfo.trim()) {
       newErrors.projectInfo = "Project information is required";
-    } else if (formData.projectInfo.trim().length < 50) {
-      newErrors.projectInfo = "Please provide at least 50 characters describing your project";
     }
 
     setErrors(newErrors);
@@ -265,17 +263,11 @@ export function Contact() {
                       className={`bg-gray-800 border-gray-700 text-white focus:border-blue-500 min-h-[120px] ${
                         errors.projectInfo ? "border-red-500" : ""
                       }`}
-                      placeholder="Describe the problems you're looking to solve (minimum 50 characters)..."
+                      placeholder="Describe the problems you're looking to solve..."
                     />
-                    <div className="flex justify-between items-center mt-1">
-                      {errors.projectInfo ? (
-                        <p className="text-red-400 text-xs">{errors.projectInfo}</p>
-                      ) : (
-                        <p className="text-gray-500 text-xs">
-                          {formData.projectInfo.length}/50 characters minimum
-                        </p>
-                      )}
-                    </div>
+                    {errors.projectInfo && (
+                      <p className="text-red-400 text-xs mt-1">{errors.projectInfo}</p>
+                    )}
                   </div>
 
                   <div>
