@@ -137,7 +137,7 @@ export function Contact() {
                   <div>
                     <h3 className="font-semibold text-white">Email</h3>
                     <a href="mailto:hello@crevo.agency" className="text-gray-400 hover:text-blue-400 transition-colors">
-                      hello@crevo.agency
+                      crevo.services@gmail.com
                     </a>
                   </div>
                 </div>
