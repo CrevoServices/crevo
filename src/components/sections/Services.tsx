@@ -11,23 +11,10 @@ export function Services() {
   ];
 
   const creativeServices = [
-  { 
-    icon: Globe, 
-    title: "Website UI/X", 
-    description: "Crafting intuitive and visually engaging interfaces that enhance user experience and brand impact." 
-  },
-  { 
-    icon: ShoppingCart, 
-    title: "E-commerce Store Design & Setup", 
-    description: "Building seamless, high-converting online stores tailored to your brand and customers." 
-  },
-  { 
-    icon: Package, 
-    title: "Product & Packaging Design", 
-    description: "Creating impactful designs that elevate your product and make your brand stand out on shelves." 
-  },
-];
-
+    { icon: Globe, title: "Website UI/UX" description:"hii"},
+    { icon: ShoppingCart, title: "E-commerce Store Design & Setup" },
+    { icon: Package, title: "Product & Packaging Design" },
+  ];
 
   return (
     <section id="services" className="py-20 bg-black text-white relative w-full">
