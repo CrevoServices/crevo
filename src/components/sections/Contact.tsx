@@ -151,6 +151,11 @@ export function Contact() {
                     <Phone className="w-6 h-6 text-purple-400" />
                   </div>
                   <div>
+                    <h3 className="font-semibold text-white">Phone</h3>
+                    <a href="tel:+919876543210" className="text-gray-400 hover:text-purple-400 transition-colors">
+                      +91 98765 43210
+                    </a>
+                  </div>
                 </div>
               </CardContent>
             </Card>
