@@ -144,18 +144,7 @@ export function Contact() {
               </CardContent>
             </Card>
 
-            <Card className="bg-gray-900 border-gray-800">
-              <CardContent className="p-6">
-                <div className="flex items-center space-x-4">
-                  <div className="p-3 rounded-lg bg-purple-500/20">
-                    <Phone className="w-6 h-6 text-purple-400" />
-                  </div>
-                  <div>
-                    
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+            
 
             <Card className="bg-gray-900 border-gray-800">
               <CardContent className="p-6">
